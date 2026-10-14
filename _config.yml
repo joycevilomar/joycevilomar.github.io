@@ -54,3 +54,10 @@ avatar: /img/avatar.jpg
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+social:
+  name: Joyce Vilomar
+  email: vilomar.joyce@gmail.com
+  links:
+    - https://github.com/joycevilomar
+    - https://www.linkedin.com/in/joyce-vilomar-taveras-13600b1a3/ # optional
