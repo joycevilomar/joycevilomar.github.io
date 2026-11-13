@@ -1,1 +1,71 @@
+--- 
+--- 
 
+@import 'main';
+
+
+/* ==========================================================================
+   PERSONALIZACIÓN ESTÉTICA - JOYCE VILOMAR
+   ========================================================================== */
+
+/* 1. Variables de color principales (Modo Claro y Oscuro) */
+html[data-mode='light'], html:not([data-mode]) {
+  --link-color: #7c2d12;             /* Terracota editorial para enlaces */
+  --sidebar-bg: #f8f6f2;             /* Fondo crema cálido de la barra lateral */
+  --sidebar-active-color: #5c1d0c;   /* Terracota profundo (alto contraste) para HOME e iconos activos */
+  --sidebar-hover-bg: #ebe4d8;       /* Recuadro arena cálido detrás de HOME (reemplaza el azul grisáceo) */
+  --site-title-color: #2b1d16;       /* Marrón espresso oscuro para el título "Lo que dijo Joyce" */
+  --site-subtitle-color: #574940;    /* Marrón medio legible para la cita bíblica debajo del título */
+}
+
+html[data-mode='dark'] {
+  --link-color: #d97757;
+  --sidebar-active-color: #f3a68c;
+  --sidebar-hover-bg: #2d2420;
+  --site-title-color: #f5ebe6;
+  --site-subtitle-color: #cbbcb4;
+}
+
+/* Asegurar que el título tome el color sólido sin opacidad */
+#sidebar .site-title {
+  color: var(--site-title-color) !important;
+  opacity: 1 !important;
+}
+
+#sidebar .site-subtitle {
+  color: var(--site-subtitle-color) !important;
+}
+
+/* 2. Estilo de enlaces al pasar el cursor */
+a:hover {
+  color: #9a3412 !important;
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.05rem;
+}
+
+.site-title, h1, h2, h3, .post-title {
+  font-family: 'Playfair Display', serif;
+}
+
+/* 3. Detalles de avatar y citas literarias */
+#avatar {
+  box-shadow: 0 0 0 3px #ebe4d8, 0 4px 12px rgba(43, 29, 22, 0.14);
+}
+
+blockquote {
+  border-left: 4px solid #7c2d12 !important;
+  background-color: #faf8f5;
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #3d312a;
+}
+
+html[data-mode='dark'] blockquote {
+  background-color: #241e1b;
+  color: #e0d6d0;
+}

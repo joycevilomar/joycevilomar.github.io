@@ -1,6 +1,8 @@
 
 title: Lo que dijo Joyce
-tagline: "Porque Jehová da la sabiduría, y de su boca viene el conocimiento y la inteligencia"
+tagline: "Porque Jehová da la sabiduría, y 
+de su boca viene el conocimiento y la inteligencia. 
+~ Proverbios 2:6"
 email: vilomar.joyce@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   "Explorando la economía, la historia y la política a través del análisis y la reflexión personal."
@@ -16,9 +18,17 @@ plugins:
 
 avatar: /assets/css/profile.png
 
+github:
+  username: joycevilomar
+
 social:
   name: Joyce Vilomar
   email: vilomar.joyce@gmail.com
   links:
     - https://github.com/joycevilomar
-    - https://www.linkedin.com/in/joyce-vilomar-taveras-13600b1a3/ # optional
+    - https://www.linkedin.com/in/joycevilomar
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
